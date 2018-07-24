@@ -1,0 +1,51 @@
+:host {
+  display: inline-block;
+
+  button {
+    width: auto;
+    text-align: left;
+    font-size: 20px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    padding: 7px 30px;
+    border: 0;
+    box-shadow: none;
+    cursor: pointer;
+
+    &.secondary {
+      color: #09f;
+      background: 0 0;
+      border: 2px solid #09f;
+      padding: 5px 28px;
+      &:hover {
+        background: #eee;
+      }
+      &[disabled] {
+        background: rgba(0, 0, 0, .05);
+      }
+    }
+
+    &.primary {
+      color: #333f48;
+      background: #b3e000;
+      border: none;
+      &:hover {
+        background: #D3F703;
+      }
+      &[disabled] {
+        background: #D3F703;
+        color: #333F48;
+      }
+    }
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &[disabled] {
+      box-shadow: none;
+      cursor: default;
+    }
+  }
+}
